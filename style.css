@@ -1,0 +1,93 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+#inp {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Button hover effects */
+button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Todo list container styles */
+#todos {
+    margin-top: 20px;
+}
+
+/* Individual todo item styles */
+#todos div {
+    background-color: white;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Paragraph styles for todo text */
+p {
+    margin: 0;
+    font-size: 18px; /* Slightly larger font size */
+    color: #333; /* Dark text color */
+}
+
+/* Delete and Update button styles */
+#todos button {
+    background-color: #dc3545; /* Red color for delete button */
+}
+
+#todos button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #inp {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 10px; /* Spacing below input */
+    }
+
+    button {
+        width: 100%; /* Full width on small screens */
+    }
+
+    #todos div {
+        flex-direction: column; /* Stack elements on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+}
